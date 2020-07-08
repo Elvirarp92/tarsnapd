@@ -1,0 +1,8 @@
+[Unit]
+Description=Run Tarsnap weekly
+
+[Timer]
+OnCalendar=weekly
+
+[Install]
+WantedBy=tarsnap.target

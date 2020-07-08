@@ -1,0 +1,6 @@
+[Unit]
+Description=Run Tarsnap backup
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /usr/local/bin/tarsnap.sh
