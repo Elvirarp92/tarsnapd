@@ -1,7 +1,10 @@
 #!/bin/bash
 
-DESTDIR=PLACEHOLDER
+DESTDIR=("placeholder1" "placeholder2")
 
-tarsnap -c \
-	-f "$(uname -n)-$(date +%Y-%m-%d_%H-%M-%S)" \
-	$DESTDIR
+for i in "${DESTDIR[@]}"
+do
+	tarsnap -c \
+		-f "$(uname -n)-$(date +%Y-%m-%d_%H-%M-%S)" \
+		$i
+done
