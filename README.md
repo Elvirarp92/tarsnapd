@@ -13,4 +13,4 @@ Systemd timer that runs a script to make a Tarsnap backup periodically.
 You can check if it's running this way: `systemctl list-timers --all`
 
 ## 🧭 Roadmap
-* Allow for several directories to be backed up
+~~* Allow for several directories to be backed up~~ Done!
